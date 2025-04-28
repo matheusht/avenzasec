@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "./dist/types",
+    "outDir": "dist",
+    "lib": ["ESNext"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@schema/*": ["./src/schema/*"],
+      "@services/*": ["./src/services/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": ["worker-configuration.d.ts", "src/**/*.ts"]
+}

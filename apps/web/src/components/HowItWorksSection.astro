@@ -1,0 +1,59 @@
+---
+const stepsData = [
+  {
+    id: "1",
+    title: "Clone the Flarekit Starter",
+    description: `
+      <div class="bg-secondary-50 p-3 rounded">
+        <code class="text-secondary font-bold">git clone https://github.com/Atyantik/flarekit.git<br/>cd flarekit</code>
+      </div>
+      <p class="mt-4">
+        Get started with a ready-to-use monorepo structure using Turborepo.
+      </p>
+    `,
+  },
+  {
+    id: "2",
+    title: "Install All Dependencies",
+    description: `
+      <div class="bg-secondary-50 p-3 rounded">
+        <code class="text-secondary font-bold">npm install</code>
+      </div>
+      <p class="mt-4">
+        Installs all packages and dependencies across the monorepo.
+      </p>
+    `,
+  },
+  {
+    id: "3",
+    title: "Start the Development Workspace",
+    description: `
+      <div class="bg-secondary-50 p-3 rounded">
+        <code class="text-secondary font-bold">npm run dev</code>
+      </div>
+      <p class="mt-4">
+        Launches all configured apps and services with a single command.
+        <a href="https://turbo.build" target="_blank">TurboRepo</a> intelligently watches for changes, rebuilds only what's needed, and keeps your workflow blazing fast.
+      </p>
+    `,
+  },
+];
+---
+
+<section id="how-it-works" class="section">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+      {
+        stepsData.map((step, index) => (
+          <div class="card">
+            <h3 class="text-xl font-medium text-black">
+              <span class="font-bold">{index + 1}.</span> {step.title}
+            </h3>
+            <div class="mt-4" set:html={step.description} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

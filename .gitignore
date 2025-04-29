@@ -19,6 +19,7 @@ worker-configuration.d.ts
 
 # Vercel settings
 .vercel/
+.c*
 
 # Dependencies
 node_modules/

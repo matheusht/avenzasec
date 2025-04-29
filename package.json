@@ -10,15 +10,15 @@
   "scripts": {
     "cleanup": "node ./scripts/cleanup.mjs",
     "setup": "node ./scripts/setup-wrangler.mjs",
-    "dev": "npx flarekit dev",
-    "build": "npx flarekit build",
-    "preview": "npx flarekit --ui=stream preview",
-    "test": "npx flarekit test",
-    "test:coverage": "npx flarekit test:coverage",
-    "test:watch": "npx flarekit test:watch",
-    "test:e2e": "npx e2e --wait-for=http://localhost:8000 --wait-for=http://localhost:7001 --timeout=120",
-    "test:e2e:watch": "npx e2e --wait-for=http://localhost:8000 --wait-for=http://localhost:7001 --timeout=120 --watch",
-    "prepare": "npm exec husky || echo 'Husky not found, skipping...'",
+    "dev": "node ./scripts/flarekit.mjs dev",
+    "build": "node ./scripts/flarekit.mjs build",
+    "preview": "node ./scripts/flarekit.mjs --ui=stream preview",
+    "test": "node ./scripts/flarekit.mjs test",
+    "test:coverage": "node ./scripts/flarekit.mjs test:coverage",
+    "test:watch": "node ./scripts/flarekit.mjs test:watch",
+    "test:e2e": "node ./scripts/e2e-workflow.mjs --wait-for=http://localhost:8000 --wait-for=http://localhost:7001 --timeout=120",
+    "test:e2e:watch": "node ./scripts/e2e-workflow.mjs --wait-for=http://localhost:8000 --wait-for=http://localhost:7001 --timeout=120 --watch",
+    "prepare": "pnpm exec husky || echo 'Husky not found, skipping...'",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -40,7 +40,7 @@
   "engines": {
     "node": ">=18.17.1"
   },
-  "packageManager": "npm@11.0.0",
+  "packageManager": "pnpm@8.15.4",
   "workspaces": [
     "apps/*",
     "packages/*"

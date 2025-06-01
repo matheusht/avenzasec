@@ -1,4 +1,4 @@
-**/*.d.ts
-**/dist
-**/build
-**/coverage
+dist
+node_modules
+.next
+build

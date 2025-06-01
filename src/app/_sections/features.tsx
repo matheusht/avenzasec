@@ -16,20 +16,21 @@ export function Projects() {
           <div className="mx-auto justify-center items-center  flex gap-3">
             <h2 className=" z-[9999] ">
               <span className="  font-bold tracking-tight text-black text-4xl md:text-5xl lg:text-[98px] ">
-                Our Work
+                Nossos
               </span>
             </h2>
             <h2 className=" font-bold tracking-tight text-black text-4xl md:text-5xl lg:text-[98px]">
-              Slaps
+              Serviços
             </h2>
           </div>
 
           <RevealAnimation>
             <p className="mt-6 px-6 md:text-lg md:leading-8 text-black/90 text-center leading-5">
               <Balancer>
-                Rune offers design engineering as a service. This means we can
-                solve your SaaS needs from design 👉 database. Bring the idea 💡
-                and watch as it comes to light.
+                A Avenza oferece soluções completas em desenvolvimento de
+                software. Desde consultoria estratégica até produtos white
+                label, transformamos suas ideias 💡 em realidade digital com
+                tecnologia de ponta.
               </Balancer>
             </p>
           </RevealAnimation>

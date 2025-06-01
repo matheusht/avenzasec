@@ -16,7 +16,7 @@ const satoshi = localFont({
 
 const brand = localFont({
   variable: "--font-brand",
-  src: "../fonts/Array-Bold.woff2",
+  src: "../fonts/typeunion-yoshida-sans-regular.otf",
 })
 
 interface RootLayoutProps {
@@ -50,8 +50,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className="flex-1">{children}</div>
           </div>
           <TailwindIndicator />
-          {/* CREDIT BG PATTERN -  https://bg.ibelick.com/ */}
-          <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#5E4B56_100%)]"></div>
+          <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#FF6B6B_100%)]"></div>
           <Toaster />
 
           <Analytics />

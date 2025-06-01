@@ -17,38 +17,38 @@ export function Pricing() {
     <>
       <div className="flex  py-9 justify-center items-center flex-col">
         <TextAnimate
-          text="Memberships levels"
+          text="Nossos Serviços"
           type="shiftInUp"
           className="text-[2.3rem] font-bold md:text-[6rem] md:font-medium tracking-tighter text-orange-50"
         />
 
         <GradientHeading size="sm" variant="lightSecondary">
-          Choose a plan that's right for you.
+          Escolha a solução ideal para seu negócio.
         </GradientHeading>
       </div>
       <div className="flex flex-col  md:flex-row items-center justify-center w-full gap-2 px-2">
         <GradientCard
-          type="standard"
-          price="4999/m"
+          type="consultoria"
+          price="R$ 8.500/mês"
           textColor="text-white"
           gradient={gradients[1]}
-          description="We build one feature request at a time. Pause or cancel anytime."
+          description="Consultoria estratégica e desenvolvimento sob demanda. Pause ou cancele a qualquer momento."
         >
           <div className="bg-orange-600 w-full absolute bottom-0 left-0 rounded-r-[28px] rounded-b-[28px] py-8 pl-6">
             <div className="">
-              <OrganicButton label="start" />
+              <OrganicButton label="começar" />
             </div>
           </div>
         </GradientCard>
 
         <GradientCard
-          type="goblin +"
-          price="9999/m"
+          type="white label"
+          price="R$ 15.000/mês"
           textColor="text-black"
           gradient={gradients[4]}
-          description="Goblin mode. In goblin mode we work faster than you can create a job posting."
+          description="Produtos white label completos. Soluções prontas para sua marca com suporte total."
         >
-          <OrganicButton label="start" />
+          <OrganicButton label="começar" />
         </GradientCard>
       </div>
     </>

@@ -7,10 +7,10 @@ import { FAQ } from "@/components/faq"
 import { Navbar } from "@/components/navbar"
 
 let tabs = [
-  { id: "hero", label: "Hero" },
-  { id: "feature", label: "Feature" },
-  { id: "testimonial", label: "Testimonial" },
-  { id: "price", label: "Price" },
+  { id: "hero", label: "Início" },
+  { id: "feature", label: "Serviços" },
+  { id: "testimonial", label: "Clientes" },
+  { id: "price", label: "Planos" },
 ]
 
 export default function LandingPageLayout({

@@ -12,12 +12,12 @@ export function FAQ() {
     <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-20 bg-transparent rounded-t-[48px]">
       <div className="py-12">
         <TextAnimate
-          text="Frequently asked "
+          text="Perguntas "
           type="shiftInUp"
           className="md:text-[6rem] text-[2rem] font-bold md:leading-10 md:pb-14 tracking-tight text-orange-100 md:py-8"
         />
         <TextAnimate
-          text="questions. "
+          text="frequentes. "
           type="shiftInUp"
           className="md:text-[6rem] text-[2rem] font-bold md:leading-10 tracking-tight text-orange-100 md:py-8 font-brand"
         />
@@ -37,16 +37,15 @@ export function FAQ() {
           >
             <AccordionTrigger className=" text-xl md:text-3xl text-left pr-4 md:pr-0  font-medium">
               <span className="px-6 md:px-2">
-                Why not just hire a full-time design engineer?
+                Por que não contratar um desenvolvedor full-time?
               </span>
             </AccordionTrigger>
             <AccordionContent className="text-lg font-semibold text-neutral-300 px-4">
-              Good luck! The annual cost of a full-time design engineer capable
-              of design, front-end development, backend development, and
-              database design exceeds $200,000, plus benefits. Thats before you
-              price in recruiting costs, interview time etc. Whats great about a
-              subscription is low risk with the highest quality outcome. Its a
-              rare win win :)
+              Boa sorte! O custo anual de um desenvolvedor sênior capaz de
+              design, front-end, back-end e arquitetura de banco de dados excede
+              R$ 300.000, além dos benefícios. Isso sem contar os custos de
+              recrutamento e tempo de entrevistas. Com nossos serviços, você tem
+              baixo risco e máxima qualidade. É um verdadeiro ganha-ganha :)
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
@@ -54,12 +53,12 @@ export function FAQ() {
             className="border-x border-b-0 border-black/10 rounded-md px-4"
           >
             <AccordionTrigger className=" text-xl md:text-3xl text-left pl-2  font-medium">
-              Is there a limit to how many requests I can have?
+              Há limite para quantos projetos posso ter?
             </AccordionTrigger>
             <AccordionContent className="text-lg font-semibold text-neutral-300 pl-2">
-              Once subscribed, you're able to add as many feature requests to
-              your queue as you'd like, and they will be delivered one by one..
-              unless you're in goblin mode.
+              Uma vez contratados, você pode adicionar quantos projetos quiser à
+              sua fila, e eles serão entregues um por um, seguindo nossas
+              metodologias ágeis e com total transparência.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
@@ -67,11 +66,12 @@ export function FAQ() {
             className="border-x border-b-0 border-black/10 rounded-md px-4"
           >
             <AccordionTrigger className=" text-xl md:text-3xl text-left pl-2  font-medium">
-              How long will it take to build a full stack feature?
+              Quanto tempo leva para desenvolver um projeto completo?
             </AccordionTrigger>
             <AccordionContent className="text-lg font-semibold text-neutral-300 pl-2">
-              Most features are completed in just two weeks or less. However,
-              more complex features can take longer.
+              A maioria dos projetos é concluída em 4-8 semanas. Projetos mais
+              complexos podem levar mais tempo, mas sempre mantemos comunicação
+              transparente sobre prazos e entregas.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
@@ -79,10 +79,12 @@ export function FAQ() {
             className="border-x border-b-0 border-black/10 rounded-md px-4"
           >
             <AccordionTrigger className=" text-xl md:text-3xl text-left pl-2  font-medium">
-              Who is the team?
+              Quem é a equipe da Avenza?
             </AccordionTrigger>
             <AccordionContent className="text-lg font-semibold text-neutral-300 pl-2">
-              Yours truly @nolansym
+              Nossa equipe é composta por desenvolvedores sêniores, arquitetos
+              de software e especialistas em UX/UI, todos com vasta experiência
+              em projetos de grande escala e tecnologias modernas.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
@@ -90,11 +92,13 @@ export function FAQ() {
             className="border-x border-b-0 border-black/10 rounded-md px-4"
           >
             <AccordionTrigger className=" text-xl md:text-3xl text-left pl-2  font-medium">
-              What if I want a different tech stack?
+              E se eu quiser uma stack tecnológica diferente?
             </AccordionTrigger>
             <AccordionContent className="text-lg font-semibold text-neutral-300 pl-2">
-              Sorry, we have picked our tech stack because its powerful, its
-              popular and it allows us to ship fast.{" "}
+              Trabalhamos com as principais tecnologias do mercado: React,
+              Next.js, Node.js, Python, AWS, e muito mais. Se você tem uma
+              preferência específica, conversamos sobre a melhor abordagem para
+              seu projeto.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

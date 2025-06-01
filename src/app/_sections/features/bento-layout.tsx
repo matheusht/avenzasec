@@ -34,23 +34,23 @@ export function BentoLayout() {
       <div className="pt-24  pb-6 flex flex-col items-center justify-center">
         <TextAnimate
           className="font-black pb-6 text-3xl"
-          text="Everything you need"
+          text="Tudo que você precisa"
           type="shiftInUp"
         />
         <p className="max-w-md md:max-w-lg text-center text-xl">
           <Balancer>
-            Shipping Saas apps is hard. We make it{" "}
+            Desenvolver software pode ser complexo. Nós tornamos{" "}
             <span className="bg-orange-100 font-bold px-2 rounded-sm">
-              easy.
+              simples.
             </span>{" "}
-            Rune provides you with{" "}
+            A Avenza oferece{" "}
             <span className="bg-orange-100 font-bold px-2 rounded-sm">
-              clean
+              código limpo
             </span>{" "}
-            code, bleeding edge stack, and an architecture that scales from
-            0-1million real{" "}
+            , tecnologias modernas e uma arquitetura que escala de 0 a milhões
+            de usuários{" "}
             <span className="bg-black text-orange-100 font-bold px-2 rounded-sm">
-              fast.
+              rapidamente.
             </span>
           </Balancer>
         </p>
@@ -59,9 +59,9 @@ export function BentoLayout() {
         <div className=" py-12 rounded-3-xl px-2">
           <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] ">
             <BentoImageCard
-              text="development"
+              text="desenvolvimento"
               image={imageCard}
-              description="gpt app"
+              description="soluções IA"
               className="md:col-span-1"
             >
               <OpenAIIcon className="stroke-orange-800 h-16 w-16 fill-orange-100 group-hover:animate-spin-medium" />
@@ -214,10 +214,10 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-[#1d1d1f] mt-4">
-          Just code in Vanilla Javascript
+          Vamos usar apenas JavaScript puro
         </p>
         <p className="border border-orange-500 bg-orange-100  text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
+          Ingênuo
         </p>
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
@@ -229,10 +229,10 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-[#1d1d1f] mt-4">
-          Tailwind CSS is cool, you know
+          Tailwind CSS é incrível, né?
         </p>
         <p className="border border-black bg-black  text-white text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
+          Sensato
         </p>
       </motion.div>
       <motion.div
@@ -247,15 +247,16 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-[#1d1d1f] mt-4">
-          I love angular, RSC, and Redux.
+          Adoro Angular, RSC e Redux.
         </p>
         <p className="border border-orange-800 bg-orange-200 dark:bg-orange-900/20 text-orange-800 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
+          Perdido
         </p>
       </motion.div>
     </motion.div>
   )
 }
+
 const SkeletonFive = () => {
   const variants = {
     initial: {
@@ -300,8 +301,8 @@ const SkeletonFive = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="text-xs text-white">
-          For MVP1 we want our product to analyze consumer data. AI should
-          summarize, analyze and index unique insights...
+          Para o MVP1 queremos que nosso produto analise dados do consumidor. IA
+          deve resumir, analisar e indexar insights únicos...
         </p>
       </motion.div>
       <motion.div
@@ -309,8 +310,8 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-orange-300/70 p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white/10 backdrop-blur-lg "
       >
         <p className="text-xs text-white">
-          Prep your product hunt post 🚀 We can build your solution in 5
-          weeks...
+          Prepare seu post no Product Hunt 🚀 Podemos construir sua solução em 5
+          semanas...
         </p>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-orange-500 to-orange-300 flex-shrink-0" />
       </motion.div>
@@ -320,10 +321,10 @@ const SkeletonFive = () => {
 
 const items = [
   {
-    title: "Premium Architecture",
+    title: "Arquitetura Premium",
     description: (
       <span className="text-sm">
-        Money can be tight, keep your cost low and scale to millions.
+        Orçamento apertado? Mantenha custos baixos e escale para milhões.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -331,10 +332,11 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-[#1d1d1f]" />,
   },
   {
-    title: "Clean Code",
+    title: "Código Limpo",
     description: (
       <span className="text-sm">
-        We obsess over clean code. This makes it easy to hire and onboard.
+        Somos obcecados por código limpo. Isso facilita contratar e integrar
+        equipes.
       </span>
     ),
     header: <SkeletonThree />,
@@ -342,11 +344,11 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-[#1d1d1f]" />,
   },
   {
-    title: "Advanced AI Solutions",
+    title: "Soluções Avançadas de IA",
     description: (
       <span className="text-sm">
-        Our bread and butter. Sentiment analysis, Vector embeddings, chat
-        history, AI agents.
+        Nossa especialidade. Análise de sentimentos, embeddings vetoriais,
+        histórico de chat, agentes de IA.
       </span>
     ),
     header: <SkeletonFour />,
@@ -356,10 +358,10 @@ const items = [
 ]
 
 const ctaCard = {
-  title: "start Today",
+  title: "Comece hoje",
   description: (
     <span className="text-sm">
-      Get started today, launch your new SaaS mvp next month.
+      Comece hoje, lance seu novo MVP SaaS no próximo mês.
     </span>
   ),
   header: <SkeletonFive />,

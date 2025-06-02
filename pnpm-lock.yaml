@@ -20,6 +20,9 @@ importers:
       '@vercel/analytics':
         specifier: ^1.1.1
         version: 1.5.0(next@15.3.3(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
+      balloons-js:
+        specifier: ^0.0.3
+        version: 0.0.3
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.1
@@ -586,6 +589,10 @@ packages:
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
+
+  balloons-js@0.0.3:
+    resolution: {integrity: sha512-5Mfy2VH2lC0WhX9jUvlkeKac+47reQq6naaNys+xFM2l+n+4jXoxGwwfnCyAdeXJh2IcRK+2LdD0cpOtyxEZzA==}
+    engines: {node: '>=12.0.0'}
 
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
@@ -1662,6 +1669,8 @@ snapshots:
       postcss-value-parser: 4.2.0
 
   balanced-match@1.0.2: {}
+
+  balloons-js@0.0.3: {}
 
   binary-extensions@2.3.0: {}
 

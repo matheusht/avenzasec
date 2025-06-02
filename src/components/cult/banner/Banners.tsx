@@ -2,15 +2,15 @@
 
 import * as React from "react"
 import Image, { StaticImageData } from "next/image"
-import lowes1 from "@/images/projects/Clay-1.png"
-import merc3 from "@/images/projects/Clay-2.png"
-import lowes2 from "@/images/projects/Clay-3.png"
-import allyMilestone2 from "@/images/projects/Clay-4.png"
-import allyMilestone from "@/images/projects/Clay-5.png"
-import merc4 from "@/images/projects/Clay-6.png"
-import allyArena1 from "@/images/projects/img-1.png"
-import allyArena2 from "@/images/projects/img-2.png"
-import allyArena3 from "@/images/projects/img-3.png"
+import allyArena1 from "@/images/projects/leetgroup.png"
+import merc4 from "@/images/projects/marketisa.png"
+import lowes1 from "@/images/projects/pareverde.png"
+import allyArena2 from "@/images/projects/readapt.png"
+import allyArena3 from "@/images/projects/seumimo.png"
+import allyMilestone from "@/images/projects/sonaira.png"
+import lowes2 from "@/images/projects/taskcircle.png"
+import merc3 from "@/images/projects/wearfy.png"
+import allyMilestone2 from "@/images/projects/yourtripvault.png"
 import {
   motion,
   MotionValue,

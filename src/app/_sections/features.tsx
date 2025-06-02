@@ -27,10 +27,26 @@ export function Projects() {
           <RevealAnimation>
             <p className="mt-6 px-6 md:text-lg md:leading-8 text-black/90 text-center leading-5">
               <Balancer>
-                A Avenza oferece soluções completas em desenvolvimento de
-                software. Desde consultoria estratégica até produtos white
-                label, transformamos suas ideias 💡 em realidade digital com
-                tecnologia de ponta.
+                Na Avenza, transformamos{" "}
+                <span className="font-semibold text-black">
+                  ideias inovadoras
+                </span>{" "}
+                em{" "}
+                <span className="font-semibold text-black">
+                  soluções digitais
+                </span>{" "}
+                de excelência. Oferecemos um ecossistema completo de
+                desenvolvimento de software, desde{" "}
+                <span className="font-semibold text-black">
+                  consultoria estratégica
+                </span>{" "}
+                até
+                <span className="font-semibold text-black">
+                  {" "}
+                  produtos prontos
+                </span>
+                , sempre utilizando as mais avançadas tecnologias do mercado.
+                Seu sucesso é nossa missão 💫
               </Balancer>
             </p>
           </RevealAnimation>

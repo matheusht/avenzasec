@@ -1,3 +1,5 @@
+"use client"
+
 import "./globals.css"
 
 import localFont from "next/font/local"
@@ -24,6 +26,14 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent(
+      "Olá! Vi seu site e gostaria de conversar sobre um projeto."
+    )
+    const whatsappUrl = `https://wa.me/5544999875357?text=${message}`
+    window.open(whatsappUrl, "_blank")
+  }
+
   return (
     <>
       <html lang="en" suppressHydrationWarning>
@@ -40,17 +50,20 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <TextAnimate
                 className="text-4xl font-base text-black font-brand"
                 type="shiftInUp"
-                text="rune"
+                text="avenza"
               />
             </div>
-            <div className="top-12 absolute right-12 md:right-24 ">
-              <OrganicButton label="start" />
+            <div
+              className="hidden md:block top-12 absolute right-12 md:right-24 "
+              onClick={handleWhatsAppClick}
+            >
+              <OrganicButton label="começar" />
             </div>
 
             <div className="flex-1">{children}</div>
           </div>
           <TailwindIndicator />
-          <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#FF6B6B_100%)]"></div>
+          <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#F95738_100%)]"></div>
           <Toaster />
 
           <Analytics />

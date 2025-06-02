@@ -3,34 +3,28 @@
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 
-import { FAQ } from "@/components/faq"
 import { Navbar } from "@/components/navbar"
 
 let tabs = [
   { id: "hero", label: "Início" },
   { id: "feature", label: "Serviços" },
-  { id: "testimonial", label: "Clientes" },
-  { id: "price", label: "Planos" },
+  { id: "team", label: "Equipe" },
+  { id: "contact", label: "Contato" },
 ]
 
-export default function LandingPageLayout({
-  hero,
-  feature,
-  testimonial,
-  price,
-}) {
+export default function LandingPageLayout({ hero, feature, team, contact }) {
   const [activeSection, setActiveSection] = useState(tabs[0].id)
 
   const heroRef = useRef(null)
   const featureRef = useRef(null)
-  const testimonialRef = useRef(null)
-  const priceRef = useRef(null)
+  const teamRef = useRef(null)
+  const contactRef = useRef(null)
 
   const sectionRefs = {
     hero: heroRef,
     feature: featureRef,
-    testimonial: testimonialRef,
-    price: priceRef,
+    team: teamRef,
+    contact: contactRef,
   }
 
   useEffect(() => {
@@ -60,15 +54,6 @@ export default function LandingPageLayout({
     }
   }, [])
 
-  const handleCtaClick = (id: string) => {
-    const section = document.querySelector(`#price`)
-
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" })
-      setActiveSection("3")
-    }
-  }
-
   return (
     <>
       <div className="relative z-[9999] w-screen ">
@@ -95,21 +80,18 @@ export default function LandingPageLayout({
             <div className="pt-12 ">{feature}</div>
           </div>
         </section>
-        <section id="testimonial" ref={testimonialRef}>
-          <div className="block md:h-[1400px] py-9">
-            <div className=" px-2">{testimonial}</div>
+        <section id="team" ref={teamRef}>
+          <div className="block  md:h-[1400px] py-9">
+            <div className="px-2">{team}</div>
           </div>
         </section>
-        <div className="relative h-full bg-black rounded-t-[4rem]">
-          <section id="price" ref={priceRef}>
-            <div className="w-full h-full md:h-[900px]  ">{price}</div>
+        <div className="relative h-full bg-black rounded-t-[4rem] mt-12">
+          <section id="contact" ref={contactRef}>
+            <div className="w-full h-full md:h-[700px]  ">{contact}</div>
           </section>
         </div>
-        <section className="relative">
-          <div className="w-full h-full ">
-            <FAQ />
-          </div>
-        </section>
+
+        {/* CREDIT BG PATTERN -  https://bg.ibelick.com/ */}
       </main>
     </>
   )

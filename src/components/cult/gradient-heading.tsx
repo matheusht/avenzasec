@@ -12,7 +12,7 @@ const headingVariants = cva(
         default:
           " bg-gradient-to-t from-neutral-800 to-neutral-950 dark:from-stone-200 dark:to-neutral-200",
         brand:
-          " bg-gradient-to-r from-white via-yellow-100 to-black dark:from-stone-200 dark:to-neutral-200",
+          " bg-gradient-to-r from-gray-500 via-yellow-500 to-black dark:from-stone-200 dark:to-neutral-200",
         light: "bg-gradient-to-t from-neutral-50 to-neutral-100",
         lightSecondary: "bg-gradient-to-t from-neutral-200 to-neutral-300",
         secondary:

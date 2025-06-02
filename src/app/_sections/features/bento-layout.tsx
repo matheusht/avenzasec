@@ -21,12 +21,7 @@ import {
   BentoImageCard,
 } from "@/components/ace/bento"
 import TextAnimate from "@/components/cult/text-animate"
-import {
-  NextjsIcon,
-  OpenAIIcon,
-  StripeIcon,
-  SupabaseIcon,
-} from "@/components/icons"
+import { NextjsIcon, StripeIcon, SupabaseIcon } from "@/components/icons"
 
 export function BentoLayout() {
   return (
@@ -45,10 +40,10 @@ export function BentoLayout() {
             </span>{" "}
             A Avenza oferece{" "}
             <span className="bg-orange-100 font-bold px-2 rounded-sm">
-              código limpo
+              agilidade,
             </span>{" "}
-            , tecnologias modernas e uma arquitetura que escala de 0 a milhões
-            de usuários{" "}
+            tecnologias modernas e uma arquitetura que escala de 0 a milhões de
+            usuários{" "}
             <span className="bg-black text-orange-100 font-bold px-2 rounded-sm">
               rapidamente.
             </span>
@@ -57,15 +52,13 @@ export function BentoLayout() {
       </div>
       <div className=" py-12 max-w-6xl mx-auto ">
         <div className=" py-12 rounded-3-xl px-2">
-          <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] ">
+          <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] w-full">
             <BentoImageCard
-              text="desenvolvimento"
+              text="Modernas"
               image={imageCard}
-              description="soluções IA"
-              className="md:col-span-1"
-            >
-              <OpenAIIcon className="stroke-orange-800 h-16 w-16 fill-orange-100 group-hover:animate-spin-medium" />
-            </BentoImageCard>
+              description="soluções de software"
+              className="md:col-span-1 w-full min-w-full"
+            ></BentoImageCard>
             {items.map((item, i) => (
               <BentoGridItem
                 key={i}
@@ -214,10 +207,10 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-[#1d1d1f] mt-4">
-          Vamos usar apenas JavaScript puro
+          Landing pages precisam ser rápidas
         </p>
         <p className="border border-orange-500 bg-orange-100  text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Ingênuo
+          Performance
         </p>
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
@@ -229,10 +222,10 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-[#1d1d1f] mt-4">
-          Tailwind CSS é incrível, né?
+          UX é a chave para conversão
         </p>
         <p className="border border-black bg-black  text-white text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensato
+          Conversão
         </p>
       </motion.div>
       <motion.div
@@ -247,10 +240,10 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-[#1d1d1f] mt-4">
-          Adoro Angular, RSC e Redux.
+          SEO otimizado para resultados
         </p>
         <p className="border border-orange-800 bg-orange-200 dark:bg-orange-900/20 text-orange-800 text-xs rounded-full px-2 py-0.5 mt-4">
-          Perdido
+          Visibilidade
         </p>
       </motion.div>
     </motion.div>
@@ -301,7 +294,7 @@ const SkeletonFive = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="text-xs text-white">
-          Para o MVP1 queremos que nosso produto analise dados do consumidor. IA
+          Para o MVP queremos que nosso produto analise dados do consumidor. IA
           deve resumir, analisar e indexar insights únicos...
         </p>
       </motion.div>
@@ -310,7 +303,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-orange-300/70 p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white/10 backdrop-blur-lg "
       >
         <p className="text-xs text-white">
-          Prepare seu post no Product Hunt 🚀 Podemos construir sua solução em 5
+          Prepare seu post no LinkedIn 🚀 Podemos construir sua solução em 5
           semanas...
         </p>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-orange-500 to-orange-300 flex-shrink-0" />
@@ -332,11 +325,11 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-[#1d1d1f]" />,
   },
   {
-    title: "Código Limpo",
+    title: "Performance Extrema",
     description: (
       <span className="text-sm">
-        Somos obcecados por código limpo. Isso facilita contratar e integrar
-        equipes.
+        Sites 3x mais rápidos que a concorrência. Maior velocidade = mais
+        conversões e melhor SEO.
       </span>
     ),
     header: <SkeletonThree />,
@@ -344,11 +337,11 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-[#1d1d1f]" />,
   },
   {
-    title: "Soluções Avançadas de IA",
+    title: "Desenvolvimento Baseado em Dados",
     description: (
       <span className="text-sm">
-        Nossa especialidade. Análise de sentimentos, embeddings vetoriais,
-        histórico de chat, agentes de IA.
+        Transforme dados em decisões. Análise preditiva, visualização de dados,
+        dashboards interativos e relatórios automatizados.
       </span>
     ),
     header: <SkeletonFour />,

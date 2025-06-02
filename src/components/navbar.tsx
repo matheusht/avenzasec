@@ -2,6 +2,7 @@
 
 import { useCallback, useState } from "react"
 import { motion } from "framer-motion"
+import { UserIcon } from "lucide-react"
 
 export function Navbar({ activeSection }) {
   const [activeTab, setActiveTab] = useState("hero")
@@ -18,7 +19,7 @@ export function Navbar({ activeSection }) {
   const tabs = [
     {
       id: "hero",
-      label: "H",
+      label: "Início",
       icon: (
         <CultIcon
           className={`h-6 w-6 ${
@@ -29,7 +30,7 @@ export function Navbar({ activeSection }) {
     },
     {
       id: "feature",
-      label: "Code",
+      label: "Serviços",
       icon: (
         <CodeIcon
           className={`h-6 w-6 ${
@@ -41,25 +42,23 @@ export function Navbar({ activeSection }) {
       ),
     },
     {
-      id: "testimonial",
-      label: "Ship",
+      id: "team",
+      label: "Equipe",
       icon: (
-        <RocketIcon
+        <UserIcon
           className={`h-6 w-6 ${
-            activeSection === "testimonial"
-              ? "text-orange-300"
-              : "text-neutral-100/60"
+            activeSection === "team" ? "text-orange-300" : "text-neutral-100/60"
           }`}
         />
       ),
     },
     {
-      id: "price",
-      label: "start",
+      id: "contact",
+      label: "Contato",
       icon: (
-        <DollarIcon
+        <RocketIcon
           className={`h-6 w-6 ${
-            activeSection === "price"
+            activeSection === "contact"
               ? "text-orange-400"
               : "text-neutral-100/60"
           }`}

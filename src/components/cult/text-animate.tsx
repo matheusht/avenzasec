@@ -206,7 +206,8 @@ const TextAnimate: FC<Props> = ({
 }: Props) => {
   const letters = Array.from(text)
   const { container, child } = animationVariants[type]
-
+  const ref = useRef(null)
+  const isInView = useInView(ref, viewport)
   if (type === "rollIn" || type === "whipIn") {
     return (
       // @ts-ignore
@@ -253,29 +254,29 @@ const TextAnimate: FC<Props> = ({
   }
 
   return (
-    // <div ref={ref}>
-    //   {isInView ? (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.8 }}
-    >
-      <motion.h2
-        style={{ display: "flex", overflow: "hidden" }}
-        role="heading"
-        variants={container}
-        className="mt-10 text-3xl font-black text-black dark:text-neutral-100 py-5 pb-8 px-8 md:text-5xl"
-        {...props}
-      >
-        {letters.map((letter, index) => (
-          <motion.span key={index} variants={child}>
-            {letter === " " ? "\u00A0" : letter}
-          </motion.span>
-        ))}
-      </motion.h2>
-    </motion.div>
-    //   ) : null}
-    // </div>
+    <div ref={ref}>
+      {isInView ? (
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.8 }}
+        >
+          <motion.h2
+            style={{ display: "flex", overflow: "hidden" }}
+            role="heading"
+            variants={container}
+            className="mt-10 text-3xl font-black text-black dark:text-neutral-100 py-5 pb-8 px-8 md:text-5xl"
+            {...props}
+          >
+            {letters.map((letter, index) => (
+              <motion.span key={index} variants={child}>
+                {letter === " " ? "\u00A0" : letter}
+              </motion.span>
+            ))}
+          </motion.h2>
+        </motion.div>
+      ) : null}
+    </div>
   )
 }
 

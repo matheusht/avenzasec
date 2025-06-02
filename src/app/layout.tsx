@@ -1,5 +1,3 @@
-"use client"
-
 import "./globals.css"
 
 import localFont from "next/font/local"
@@ -7,8 +5,8 @@ import { Toaster } from "sonner"
 
 import { cn } from "@/lib/utils"
 import { Analytics } from "@/components/analytics"
-import { OrganicButton } from "@/components/cult/organic-button"
 import TextAnimate from "@/components/cult/text-animate"
+import { HeaderButtons } from "@/components/header-buttons"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 
 const satoshi = localFont({
@@ -26,14 +24,6 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const handleWhatsAppClick = () => {
-    const message = encodeURIComponent(
-      "Olá! Vi seu site e gostaria de conversar sobre um projeto."
-    )
-    const whatsappUrl = `https://wa.me/5544999875357?text=${message}`
-    window.open(whatsappUrl, "_blank")
-  }
-
   return (
     <>
       <html lang="en" suppressHydrationWarning>
@@ -53,12 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 text="avenza"
               />
             </div>
-            <div
-              className="hidden md:block top-12 absolute right-12 md:right-24 "
-              onClick={handleWhatsAppClick}
-            >
-              <OrganicButton label="começar" />
-            </div>
+            <HeaderButtons />
 
             <div className="flex-1">{children}</div>
           </div>

@@ -15,8 +15,8 @@ export const ProductGallery = ({
   const [selectedImage, setSelectedImage] = useState(0)
 
   return (
-    <div className="space-y-6">
-      <div className="aspect-square overflow-hidden rounded-3xl bg-muted relative group">
+    <div className="space-y-4 lg:space-y-6">
+      <div className="aspect-square overflow-hidden rounded-2xl lg:rounded-3xl bg-muted relative group">
         <AnimatePresence mode="wait">
           <motion.img
             key={selectedImage}
@@ -41,11 +41,11 @@ export const ProductGallery = ({
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-4 gap-2 lg:gap-3">
         {images.map((image, index) => (
           <motion.button
             key={index}
-            className={`aspect-square overflow-hidden rounded-xl border-2 transition-all duration-300 ${
+            className={`aspect-square overflow-hidden rounded-lg lg:rounded-xl border-2 transition-all duration-300 ${
               selectedImage === index
                 ? "border-primary shadow-xl scale-105 ring-4 ring-primary/20"
                 : "border-border hover:border-primary/50 hover:shadow-lg hover:scale-102"

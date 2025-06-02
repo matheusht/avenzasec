@@ -130,9 +130,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <div className="min-h-screen">
-      <div className="bg-gradient-to-br from-background via-primary/5 to-accent/5 pt-32 pb-20">
+      <div className="bg-gradient-to-br from-background via-primary/5 to-accent/5 pt-20 pb-12 lg:pt-32 lg:pb-20">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24 items-start">
             <FadeIn>
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-30" />
@@ -152,7 +152,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-muted/20 to-background py-32">
+      <div className="bg-gradient-to-br from-muted/20 to-background py-16 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
           <FadeIn delay={0.35}>
             <ProductIncludes features={product.features} />
@@ -160,7 +160,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-green-50/50 to-emerald-50/50 dark:from-green-950/10 dark:to-emerald-950/10 py-32">
+      <div className="bg-gradient-to-br from-green-50/50 to-emerald-50/50 dark:from-green-950/10 dark:to-emerald-950/10 py-16 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
           <FadeIn delay={0.38}>
             <ProductGuarantee />
@@ -168,7 +168,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </div>
 
-      <div className="bg-background py-32">
+      <div className="bg-background py-16 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
           <FadeIn delay={0.4}>
             <ProductFeatures
@@ -179,7 +179,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </div>
 
-      {/*<div className="bg-gradient-to-br from-muted/30 to-background py-32">
+      {/*<div className="bg-gradient-to-br from-muted/30 to-background py-16 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
           <FadeIn delay={0.6}>
             <ProductTestimonials testimonials={product.testimonials} />

@@ -29,7 +29,7 @@ export function Contact() {
     const message = encodeURIComponent(
       "Olá! Vi seu site e gostaria de conversar sobre um projeto."
     )
-    const whatsappUrl = `https://wa.me/5511999999999?text=${message}`
+    const whatsappUrl = `https://wa.me/5544999875357?text=${message}`
     window.open(whatsappUrl, "_blank")
 
     if (balloonsRef.current && !hasTriggeredBalloons) {

@@ -4,7 +4,6 @@ import * as React from "react"
 import Image, { StaticImageData } from "next/image"
 import allyArena1 from "@/images/projects/leetgroup.png"
 import merc4 from "@/images/projects/marketisa.png"
-import lowes1 from "@/images/projects/pareverde.png"
 import allyArena2 from "@/images/projects/readapt.png"
 import allyArena3 from "@/images/projects/seumimo.png"
 import allyMilestone from "@/images/projects/sonaira.png"
@@ -24,7 +23,13 @@ import { cn } from "@/lib/utils"
 
 import { CameraTarget, useCamera, utils } from "./camera"
 
-const bannerTwoImage2s = [allyMilestone, merc4, allyArena1, lowes1, allyArena3]
+const bannerTwoImage2s = [
+  allyMilestone,
+  merc4,
+  allyArena1,
+  "/pareverde.png",
+  allyArena3,
+]
 
 interface InfiniteBannerProps extends React.HTMLProps<HTMLDivElement> {
   clock: MotionValue<number>
@@ -109,7 +114,13 @@ const bannerOneImages = [
   // '/images/projects/ally-milestone-2.png',
 ]
 
-const bannerTwoImages = [allyMilestone, merc4, allyArena1, lowes1, allyArena3]
+const bannerTwoImages = [
+  allyMilestone,
+  merc4,
+  allyArena1,
+  "/pareverde.png",
+  allyArena3,
+]
 // const bannerTwoImages = [
 //   '/images/projects/ally-milestone.png',
 //   '/images/projects/merc-4.png',
@@ -134,8 +145,9 @@ const Photo = ({ src, onClick }: PhotoProps) => {
         src={src}
         alt={"project-image"}
         placeholder="blur"
-        // width={450}
-        // height={300}
+        width={450}
+        height={300}
+        blurDataURL="/Clay-6.png"
         onClick={() => {
           onClick(ref.current)
           setIsFull((isFull) => !isFull)
@@ -202,7 +214,7 @@ const Banners = () => {
           {bannerTwoImages.map((img, i) => (
             <Photo
               key={`set2-${i}`}
-              src={img}
+              src={img as StaticImageData}
               onClick={(t) => setTarget((prev) => (prev !== t ? t : null))}
             />
           ))}

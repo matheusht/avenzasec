@@ -3,7 +3,6 @@
 
 import React from "react"
 import Image from "next/image"
-import imageCard from "@/images/projects/Clay-6.png"
 import {
   IconBoxAlignRightFilled,
   IconFileBroken,
@@ -55,7 +54,7 @@ export function BentoLayout() {
           <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] w-full">
             <BentoImageCard
               text="Modernas"
-              image={imageCard}
+              image={"/Clay-6.png"}
               description="soluções de software"
               className="md:col-span-1 w-full min-w-full"
             ></BentoImageCard>

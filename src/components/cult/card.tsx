@@ -29,7 +29,7 @@ export function GradientCard({
   return (
     <motion.div
       className={cn(
-        "relative shadow-sm h-[360px] md:h-[550px] w-full md:w-[400px] rounded-[20px] md:rounded-[28px] border border-black/5",
+        "relative shadow-sm h-[250px] sm:h-[360px] md:h-[550px] w-full md:w-[400px] rounded-[20px] md:rounded-[28px] border border-black/5",
         textColor
       )}
       style={{

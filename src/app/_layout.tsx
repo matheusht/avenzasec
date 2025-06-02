@@ -81,11 +81,11 @@ export default function LandingPageLayout({ hero, feature, team, contact }) {
           </div>
         </section>
         <section id="team" ref={teamRef}>
-          <div className="block  md:h-[1400px] py-9">
+          <div className="block   md:h-[1000px] py-9">
             <div className="px-2">{team}</div>
           </div>
         </section>
-        <div className="relative h-full bg-black rounded-t-[4rem] mt-12">
+        <div className="relative h-full bg-black rounded-t-[4rem] mt-12 md:mt-0">
           <section id="contact" ref={contactRef}>
             <div className="w-full h-full md:h-[700px]  ">{contact}</div>
           </section>

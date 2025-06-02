@@ -45,7 +45,7 @@ const teamMembers = [
     name: "João Vitor Sberse",
     role: "Software Engineer",
     topics: [
-      "Especialista em startups",
+      "Startup Specialist",
       "Soluções utilizando IA",
       "Catalizador de inovação",
     ],
@@ -70,7 +70,7 @@ export function Team() {
         </GradientHeading>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-2 md:gap-4 px-2 md:px-4 max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-2 md:gap-4 px-2 md:px-4 max-w-7xl mx-auto">
         {teamMembers.map((member) => (
           <div key={member.name} className="group">
             <GradientCard
@@ -80,13 +80,13 @@ export function Team() {
               gradient={member.gradient}
               topics={member.topics}
             >
-              <div className="mt-4 md:mt-6 transform transition-transform duration-300">
+              <div className="sm:block hidden mt-4 md:mt-6 transform transition-transform duration-300">
                 <Image
                   src={member.img}
                   alt={member.name}
                   width={150}
                   height={150}
-                  className="rounded-full w-[120px] h-[120px] md:w-[180px] md:h-[180px]"
+                  className="rounded-full w-[120px] h-[120px] md:w-[140px] md:h-[140px] lg:w-[140px] lg:h-[140px] xl:w-[180px] xl:h-[180px]"
                 />
               </div>
             </GradientCard>

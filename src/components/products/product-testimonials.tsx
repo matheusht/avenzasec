@@ -114,10 +114,10 @@ export const ProductTestimonials = ({
             transition={{ type: "spring", stiffness: 300 }}
           >
             <div className="text-4xl font-bold text-primary mb-2 font-brand">
-              500+
+              100%
             </div>
             <div className="text-sm text-muted-foreground font-medium">
-              Imobiliárias Atendidas
+              Garantia de Resultados
             </div>
           </motion.div>
           <motion.div

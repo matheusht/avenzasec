@@ -72,3 +72,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </>
   )
 }
+
+export const metadata = {
+  title: "Avenza",
+  description: "Avenza",
+  icons: {
+    icon: "/favicon.ico",
+  },
+}

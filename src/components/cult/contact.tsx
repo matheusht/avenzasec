@@ -87,12 +87,15 @@ export function Contact() {
             onClick={handleWhatsAppClick}
             whileHover={{ scale: 1.05, y: -4 }}
             whileTap={{ scale: 0.98 }}
-            className="group relative overflow-hidden bg-gradient-to-r from-green-500 via-green-600 to-green-500 hover:from-green-400 hover:via-green-500 hover:to-green-600 text-white font-black px-16 py-8 rounded-full shadow-2xl hover:shadow-green-500/50 transition-all duration-300 flex items-center gap-6 text-2xl border-2 border-green-400/30"
+            className="group relative overflow-hidden bg-gradient-to-r from-green-500 via-green-600 to-green-500 text-white font-black px-16 py-8 rounded-full shadow-2xl transition-all duration-300 flex items-center gap-6 text-2xl border-2 border-green-400/30 cursor-pointer"
           >
+            <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-green-500 to-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="absolute inset-0 bg-gradient-to-r from-green-300/30 to-green-400/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <MessageCircle className="w-10 h-10 relative z-10" />
-            <span className="relative z-10">Falar no WhatsApp</span>
-            <Sparkles className="w-8 h-8 relative z-10 group-hover:animate-pulse" />
+            <MessageCircle className="w-10 h-10 transition-transform duration-300 group-hover:scale-110" />
+            <span className="transition-transform duration-300 group-hover:scale-105">
+              Falar no WhatsApp
+            </span>
+            <Sparkles className="w-8 h-8 transition-all duration-300 group-hover:scale-110 group-hover:rotate-12" />
           </motion.button>
         </motion.div>
 

@@ -58,7 +58,7 @@ export default function LandingPageLayout({ hero, feature, team, contact }) {
     <>
       <div className="relative z-[9999] w-screen ">
         <div className=" flex items-center justify-center">
-          <div className=" fixed bottom-10 md:top-10 z-[9999]">
+          <div className=" fixed bottom-10 md:top-10 z-[9999] max-h-[100px]">
             <motion.div
               initial={{ opacity: 0, y: -120 }}
               animate={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ export default function LandingPageLayout({ hero, feature, team, contact }) {
         </section>
         <div className="relative h-full bg-black rounded-t-[4rem] mt-12 md:mt-0">
           <section id="contact" ref={contactRef}>
-            <div className="w-full h-full md:h-[700px]  ">{contact}</div>
+            <div className="w-full h-full md:h-[750px]  ">{contact}</div>
           </section>
         </div>
 

@@ -1,6 +1,7 @@
 import "./globals.css"
 
 import localFont from "next/font/local"
+import Link from "next/link"
 import { Toaster } from "sonner"
 
 import { cn } from "@/lib/utils"
@@ -37,11 +38,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <div className="relative flex   mx-auto flex-col">
             <div className="top-12 absolute left-12 md:left-24 z-[9999]">
-              <TextAnimate
-                className="text-4xl font-base text-black font-brand"
-                type="shiftInUp"
-                text="avenza"
-              />
+              <Link href="/">
+                <TextAnimate
+                  className="text-4xl font-base text-black font-brand"
+                  type="shiftInUp"
+                  text="avenza"
+                />
+              </Link>
             </div>
             <HeaderButtons />
 

@@ -3,7 +3,6 @@
 import { LayoutGroup, motion } from "framer-motion"
 
 import { TextRotate } from "@/components/ui/text-rotate"
-import { BackgroundMedia } from "@/components/cult/background-media"
 import { FadeIn } from "@/components/cult/fade-in"
 import { GradientHeading } from "@/components/cult/gradient-heading"
 import Floating, { FloatingElement } from "@/components/parallax-floating"

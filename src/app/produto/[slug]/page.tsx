@@ -1,14 +1,14 @@
 import { Metadata } from "next"
 
-import { Button } from "@/components/ui/button"
+//import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/cult/fade-in"
-import { GradientHeading } from "@/components/cult/gradient-heading"
+//import { GradientHeading } from "@/components/cult/gradient-heading"
 import { ProductFeatures } from "@/components/products/product-features"
 import { ProductGallery } from "@/components/products/product-gallery"
 import { ProductGuarantee } from "@/components/products/product-guarantee"
 import { ProductIncludes } from "@/components/products/product-includes"
 import { ProductInfo } from "@/components/products/product-info"
-import { ProductTestimonials } from "@/components/products/product-testimonials"
+//import { ProductTestimonials } from "@/components/products/product-testimonials"
 import { WhatsAppContact } from "@/components/products/whatsapp-contact"
 
 interface ProductPageProps {
@@ -179,13 +179,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </div>
 
-      <div className="bg-gradient-to-br from-muted/30 to-background py-32">
+      {/*<div className="bg-gradient-to-br from-muted/30 to-background py-32">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
           <FadeIn delay={0.6}>
             <ProductTestimonials testimonials={product.testimonials} />
           </FadeIn>
         </div>
-      </div>
+      </div>*/}
 
       <WhatsAppContact
         productName={product.name}

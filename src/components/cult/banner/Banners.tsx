@@ -1,15 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Image, { StaticImageData } from "next/image"
-import allyArena1 from "@/images/projects/leetgroup.png"
-import merc4 from "@/images/projects/marketisa.png"
-import allyArena2 from "@/images/projects/readapt.png"
-import allyArena3 from "@/images/projects/seumimo.png"
-import allyMilestone from "@/images/projects/sonaira.png"
-import lowes2 from "@/images/projects/taskcircle.png"
-import merc3 from "@/images/projects/wearfy.png"
-import allyMilestone2 from "@/images/projects/yourtripvault.png"
+import Image from "next/image"
 import {
   motion,
   MotionValue,
@@ -24,11 +16,11 @@ import { cn } from "@/lib/utils"
 import { CameraTarget, useCamera, utils } from "./camera"
 
 const bannerTwoImage2s = [
-  allyMilestone,
-  merc4,
-  allyArena1,
-  "/pareverde.png",
-  allyArena3,
+  "/projects/sonaira.png",
+  "/projects/marketisa.png",
+  "/projects/readapt.png",
+  "/projects/pareverde.png",
+  "/projects/seumimo.png",
 ]
 
 interface InfiniteBannerProps extends React.HTMLProps<HTMLDivElement> {
@@ -103,11 +95,10 @@ export const useClock = ({
 
 const bannerOneImages = [
   // '/images/projects/ally-arena-1.png',
-  allyArena1,
-  lowes2,
-  merc3,
-  allyArena2,
-  allyMilestone2,
+  "/projects/leetgroup.png",
+  "/projects/taskcircle.png",
+  "/projects/wearfy.png",
+  "/projects/yourtripvault.png",
   // '/images/projects/lowes-2.png',
   // '/images/projects/merc-3.png',
   // '/images/projects/ally-arena-2.png',
@@ -115,11 +106,11 @@ const bannerOneImages = [
 ]
 
 const bannerTwoImages = [
-  allyMilestone,
-  merc4,
-  allyArena1,
-  "/pareverde.png",
-  allyArena3,
+  "/projects/sonaira.png",
+  "/projects/marketisa.png",
+  "/projects/readapt.png",
+  "/projects/pareverde.png",
+  "/projects/seumimo.png",
 ]
 // const bannerTwoImages = [
 //   '/images/projects/ally-milestone.png',
@@ -130,7 +121,7 @@ const bannerTwoImages = [
 // ]
 
 interface PhotoProps {
-  src: StaticImageData
+  src: string
   onClick: (target: utils.CameraTarget | null) => void
 }
 
@@ -147,7 +138,7 @@ const Photo = ({ src, onClick }: PhotoProps) => {
         placeholder="blur"
         width={450}
         height={300}
-        blurDataURL="/Clay-6.png"
+        blurDataURL={src}
         onClick={() => {
           onClick(ref.current)
           setIsFull((isFull) => !isFull)
@@ -214,7 +205,7 @@ const Banners = () => {
           {bannerTwoImages.map((img, i) => (
             <Photo
               key={`set2-${i}`}
-              src={img as StaticImageData}
+              src={img}
               onClick={(t) => setTarget((prev) => (prev !== t ? t : null))}
             />
           ))}

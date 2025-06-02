@@ -35,7 +35,7 @@ export function BentoImageCard({
         className
       )}
     >
-      <Image
+      <img
         src={image}
         alt={`Slide ${text}`}
         width={405}

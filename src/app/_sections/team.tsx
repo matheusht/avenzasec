@@ -81,8 +81,8 @@ export function Team() {
               topics={member.topics}
             >
               <div className="sm:block hidden mt-4 md:mt-6 transform transition-transform duration-300">
-                <Image
-                  src={member.img}
+                <img
+                  src={member.img.src}
                   alt={member.name}
                   width={150}
                   height={150}

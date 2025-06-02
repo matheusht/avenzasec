@@ -131,14 +131,12 @@ const Photo = ({ src, onClick }: PhotoProps) => {
 
   return (
     <CameraTarget ref={ref}>
-      <Image
+      <img
         tabIndex={0}
         src={src}
         alt={"project-image"}
-        placeholder="blur"
         width={450}
         height={300}
-        blurDataURL={src}
         onClick={() => {
           onClick(ref.current)
           setIsFull((isFull) => !isFull)

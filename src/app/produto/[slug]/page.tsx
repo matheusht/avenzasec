@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 
-//import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/cult/fade-in"
 //import { GradientHeading } from "@/components/cult/gradient-heading"
 import { ProductFeatures } from "@/components/products/product-features"
@@ -178,6 +178,51 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </FadeIn>
         </div>
       </div>
+
+      {product.id === "imobiliarias" && (
+        <div className="bg-gradient-to-br from-primary/5 to-accent/5 py-16 lg:py-32">
+          <div className="container mx-auto px-4 lg:px-8 max-w-7xl">
+            <FadeIn delay={0.5}>
+              <div className="text-center max-w-3xl mx-auto">
+                <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-primary/80 to-accent bg-clip-text text-transparent">
+                  Veja o Produto em Ação
+                </h2>
+                <p className="text-lg lg:text-xl text-muted-foreground mb-8">
+                  Experimente nossa solução completa para imobiliárias e veja
+                  como ela pode transformar sua geração de leads.
+                </p>
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
+                  <a
+                    href="https://imobiliaria.theodoro.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    Ver Demonstração ao Vivo
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </a>
+                </Button>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      )}
 
       {/*<div className="bg-gradient-to-br from-muted/30 to-background py-16 lg:py-32">
         <div className="container mx-auto px-4 lg:px-8 max-w-7xl">

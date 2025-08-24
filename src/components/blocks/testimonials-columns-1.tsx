@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+import { GradientHeading } from "../cult/gradient-heading";
 
 const testimonials = [
   {

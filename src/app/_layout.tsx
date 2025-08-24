@@ -4,26 +4,24 @@ import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 
 import { Navbar } from "@/components/navbar"
+import Testimonials from "@/components/blocks/testimonials"
 
 let tabs = [
   { id: "hero", label: "Início" },
   { id: "feature", label: "Serviços" },
-  { id: "team", label: "Equipe" },
   { id: "contact", label: "Contato" },
 ]
 
-export default function LandingPageLayout({ hero, feature, team, contact }) {
+export default function LandingPageLayout({ hero, feature, contact }) {
   const [activeSection, setActiveSection] = useState(tabs[0].id)
 
   const heroRef = useRef(null)
   const featureRef = useRef(null)
-  const teamRef = useRef(null)
   const contactRef = useRef(null)
 
   const sectionRefs = {
     hero: heroRef,
     feature: featureRef,
-    team: teamRef,
     contact: contactRef,
   }
 
@@ -80,11 +78,11 @@ export default function LandingPageLayout({ hero, feature, team, contact }) {
             <div className="pt-12 ">{feature}</div>
           </div>
         </section>
-        <section id="team" ref={teamRef}>
-          <div className="block   md:h-[1000px] py-9">
-            <div className="px-2">{team}</div>
-          </div>
+
+        <section className="relative z-10">
+          <Testimonials />
         </section>
+
         <div className="relative h-full bg-black rounded-t-[4rem] mt-12 md:mt-0">
           <section id="contact" ref={contactRef}>
             <div className="w-full h-full md:h-[750px]  ">{contact}</div>

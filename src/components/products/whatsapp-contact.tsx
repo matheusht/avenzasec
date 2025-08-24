@@ -15,7 +15,7 @@ export const WhatsAppContact = ({
   price,
   originalPrice,
 }: WhatsAppContactProps) => {
-  const whatsappNumber = "5544999875357"
+  const whatsappNumber = "5544999522514"
 
   const handleWhatsAppRedirect = () => {
     const message = `Olá! Tenho interesse em ${productName}. Gostaria de saber mais detalhes.`

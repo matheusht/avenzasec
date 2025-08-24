@@ -27,9 +27,9 @@ export function Contact() {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent(
-      "Olá! Vi seu site e gostaria de conversar sobre um projeto."
+      "Olá! Vi seu site e gostaria de conversar sobre segurança para minha startup."
     )
-    const whatsappUrl = `https://wa.me/5544999875357?text=${message}`
+    const whatsappUrl = `https://wa.me/5544999522514?text=${message}`
     window.open(whatsappUrl, "_blank")
 
     if (balloonsRef.current && !hasTriggeredBalloons) {
@@ -62,7 +62,7 @@ export function Contact() {
             className="mb-6  text-center"
             variant="lightSecondary"
           >
-            Vamos Transformar Sua Ideia em Realidade?
+            Segurança Simples para Sua Empresa
           </GradientHeading>
 
           <motion.p
@@ -71,9 +71,9 @@ export function Contact() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
           >
-            Estou pronto para desenvolver sua próxima aplicação web com as
-            tecnologias mais modernas. Entre em contato e vamos conversar sobre
-            seu projeto!
+            Estamos prontos para proteger sua startup com pentesting e
+            consultoria estratégica. Entre em contato e vamos conversar sobre
+            sua segurança!
           </motion.p>
         </motion.div>
 
@@ -106,7 +106,7 @@ export function Contact() {
           className="mt-8 text-center"
         >
           <p className="text-white/60 text-sm">
-            Resposta em até 2 horas • Consultoria gratuita
+            Resposta em até 2 horas • Análise de segurança gratuita
           </p>
         </motion.div>
       </div>

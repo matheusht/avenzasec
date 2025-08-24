@@ -28,23 +28,23 @@ export function BentoLayout() {
       <div className="pt-24  pb-6 flex flex-col items-center justify-center">
         <TextAnimate
           className="font-black pb-6 text-3xl"
-          text="Tudo que você precisa"
+          text="Segurança sem complicação"
           type="shiftInUp"
         />
         <p className="max-w-md md:max-w-lg text-center text-xl">
           <Balancer>
-            Desenvolver software pode ser complexo. Nós tornamos{" "}
+            Segurança pode ser complexa. Nós tornamos{" "}
             <span className="bg-orange-100 font-bold px-2 rounded-sm">
               simples.
             </span>{" "}
             A Avenza oferece{" "}
             <span className="bg-orange-100 font-bold px-2 rounded-sm">
-              agilidade,
+              rapidez,
             </span>{" "}
-            tecnologias modernas e uma arquitetura que escala de 0 a milhões de
+            expertise humanizada e soluções que protegem startups de 0 a milhões de
             usuários{" "}
             <span className="bg-black text-orange-100 font-bold px-2 rounded-sm">
-              rapidamente.
+              eficientemente.
             </span>
           </Balancer>
         </p>
@@ -53,9 +53,9 @@ export function BentoLayout() {
         <div className=" py-12 rounded-3-xl px-2">
           <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] w-full">
             <BentoImageCard
-              text="Modernas"
+              text="Pentesting"
               image={"/Clay-6.png"}
-              description="soluções de software"
+              description="humanizado e rápido"
               className="md:col-span-1 w-full min-w-full"
             ></BentoImageCard>
             {items.map((item, i) => (
@@ -313,10 +313,10 @@ const SkeletonFive = () => {
 
 const items = [
   {
-    title: "Arquitetura Premium",
+    title: "Pentesting Humanizado",
     description: (
       <span className="text-sm">
-        Orçamento apertado? Mantenha custos baixos e escale para milhões.
+        Expert hackers + IA acelerada. Pentesting rápido e acessível para startups.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -324,11 +324,10 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-[#1d1d1f]" />,
   },
   {
-    title: "Performance Extrema",
+    title: "Consultoria Estratégica",
     description: (
       <span className="text-sm">
-        Sites 3x mais rápidos que a concorrência. Maior velocidade = mais
-        conversões e melhor SEO.
+        Orientação de segurança personalizada para crescimento de startups.
       </span>
     ),
     header: <SkeletonThree />,
@@ -336,11 +335,10 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-[#1d1d1f]" />,
   },
   {
-    title: "Desenvolvimento Baseado em Dados",
+    title: "Compliance & Auditoria",
     description: (
       <span className="text-sm">
-        Transforme dados em decisões. Análise preditiva, visualização de dados,
-        dashboards interativos e relatórios automatizados.
+        Passe em auditorias sem drenar seus recursos. Relatórios claros e acionáveis.
       </span>
     ),
     header: <SkeletonFour />,
@@ -350,10 +348,10 @@ const items = [
 ]
 
 const ctaCard = {
-  title: "Comece hoje",
+  title: "Proteja sua startup",
   description: (
     <span className="text-sm">
-      Comece hoje, lance seu novo MVP SaaS no próximo mês.
+      Comece hoje, tenha segurança enterprise amanhã.
     </span>
   ),
   header: <SkeletonFive />,

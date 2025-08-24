@@ -134,13 +134,13 @@ export function Hero() {
             asChild
           >
             <h1 className="md:hidden font-black text-5xl">
-              Transforme <br />
-              suas <br />
-              <span className="font-brand text-6xl sr-only">ideias</span>
+              Segurança <br />
+              feita <br />
+              <span className="font-brand text-6xl sr-only">simples</span>
             </h1>
             <h1 className="hidden md:flex items-center font-semibold flex-col text-[8rem] lg:text-[10rem] xl:text-[12.5rem] pb-4">
-              Transforme <br /> suas <br />
-              <span className="font-brand pt-9 sr-only">ideias</span>
+              Segurança <br /> feita <br />
+              <span className="font-brand pt-9 sr-only">simples</span>
             </h1>
           </GradientHeading>
         </FadeIn>
@@ -155,7 +155,7 @@ export function Hero() {
               transition={{ type: "spring", damping: 30, stiffness: 400 }}
             >
               <TextRotate
-                texts={["ideias", "visões", "criações"]}
+                texts={["simples", "rápida", "eficiente"]}
                 mainClassName="overflow-hidden"
                 staggerDuration={0.03}
                 staggerFrom="last"
@@ -176,7 +176,7 @@ export function Hero() {
               transition={{ type: "spring", damping: 30, stiffness: 400 }}
             >
               <TextRotate
-                texts={["ideias", "visões", "criações"]}
+                texts={["simples", "rápida", "eficiente"]}
                 mainClassName="overflow-hidden"
                 staggerDuration={0.03}
                 staggerFrom="last"
